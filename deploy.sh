@@ -14,6 +14,7 @@ sudo docker run -p 8080:8080 -d demo:latest
 sleep 15
 
 PORT=8080
+HOSTNAME='44.214.73.219'
 checkHealth() {
     PORT=$1
     url="http://$HOSTNAME:$PORT/actuator/health"

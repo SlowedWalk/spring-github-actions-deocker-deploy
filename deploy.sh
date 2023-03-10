@@ -16,8 +16,8 @@ sleep 15
 PORT=8080
 checkHealth() {
     PORT=$1
-    url="http://44.214.73.219:$PORT/actuator/health"
-#    url="http://44.214.73.219/actuator/health"
+#    url="http://44.214.73.219:$PORT/actuator/health"
+    url="http://nodejs-demo.go-africa.io/actuator/health"
 
     pingCount=0
     stopIterate=0

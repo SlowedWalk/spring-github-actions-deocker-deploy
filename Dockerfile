@@ -8,7 +8,7 @@ COPY . /app
 RUN mvn clean package -DskipTests
 
 # Using java 17
-FROM openjdk:17-jdk-alpine
+FROM openjdk:17-jdk
 
 ARG JAR_FILE=/app/target/*.jar
 
